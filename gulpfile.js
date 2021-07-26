@@ -10,6 +10,12 @@ function css() {
         .pipe(gulp.dest('./build/css'))
 }
 
+function watchArchivos() {
+    gulp.watch('scss/*.scss', css);
+    gulp.watch('index.html');
+}
+
 // Tareas
 
 gulp.task('css', css);
+gulp.task('watch', gulp.parallel(watchArchivos));

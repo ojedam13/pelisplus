@@ -1,28 +1,25 @@
 {
-  "name": "netflix_inicio",
+  "name": "pelis",
   "version": "1.0.0",
   "description": "proyecto netflix login con flexbox gulp y sass",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Martin ojeda",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ojedam13/pelisplus.git"
+  },
+  "author": "Martin Ojeda",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ojedam13/pelisplus/issues"
+  },
+  "homepage": "https://github.com/ojedam13/pelisplus#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-sass": "^5.0.0",
     "node-sass": "^6.0.1"
-  },
-  "dependencies": {
-    "node-sass": "^6.0.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ojedam13/pelisplus.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ojedam13/pelisplus/issues"
-  },
-  "homepage": "https://github.com/ojedam13/pelisplus#readme"
+  }
 }

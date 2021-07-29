@@ -36,3 +36,13 @@ a{
     width: 90%;
     margin: 0 auto;
 }
+
+.logotipo{
+    margin-top: .5rem;
+    max-width: 100px;
+
+    @include tablet{
+        margin-top: .8rem;
+        margin-left: 2%;
+    }
+}

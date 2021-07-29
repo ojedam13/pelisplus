@@ -33,3 +33,14 @@ a:hover {
   width: 90%;
   margin: 0 auto;
 }
+
+.logotipo {
+  margin-top: 0.5rem;
+  max-width: 100px;
+}
+@media (min-width: 768px) {
+  .logotipo {
+    margin-top: 0.8rem;
+    margin-left: 2%;
+  }
+}

@@ -87,3 +87,33 @@ form .campo input:focus + label {
   font-size: 0.6rem;
   top: 0.5rem;
 }
+form .submit {
+  display: flex;
+  margin-top: 2rem;
+}
+form .submit input[type=submit] {
+  background-color: #e50914;
+  color: #ffffffe0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+form .submit input[type=submit]:hover {
+  cursor: pointer;
+}
+form .acciones {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 0;
+  margin: 0.5rem 0 8rem;
+}
+form .acciones label,
+form .acciones a {
+  font-size: 0.8rem;
+  text-decoration: none;
+}

@@ -67,6 +67,10 @@ form .campo {
 }
 form .campo label {
   position: absolute;
+  top: 11px;
+  left: 1rem;
+  font-size: 0.9rem;
+  transition: font-size 0.2s ease, top 0.2s ease;
 }
 form .campo input {
   flex: 1;
@@ -78,4 +82,8 @@ form .campo input {
 form .campo input:focus {
   background-color: #454545;
   outline: none;
+}
+form .campo input:focus + label {
+  font-size: 0.6rem;
+  top: 0.5rem;
 }

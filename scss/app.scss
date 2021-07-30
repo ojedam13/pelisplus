@@ -71,6 +71,10 @@ form {
 
         label{
             position: absolute;
+            top: 11px;
+            left: 1rem;
+            font-size: .9rem;
+            transition: font-size .2s ease, top .2s ease;
         }
         input{
             flex: 1;
@@ -78,9 +82,14 @@ form {
             border: none;
             background-color: $gris;
             border-radius: $radius;
-            &:focus{ //cambia color de fondo
+            &:focus{ 
                 background-color: $gris3; 
                 outline: none;
+
+                + label{
+                    font-size: .6rem;
+                    top: .5rem;
+                }
             }
         }
     }

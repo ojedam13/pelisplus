@@ -51,7 +51,7 @@ a{
 
     @include tablet{
         background-color: rgba(0,0,0, 0.85);
-        max-width: 450px;
+        max-width: 420px;
         padding: 2rem 4rem;
         margin: 1rem auto 4rem auto;
     }
@@ -117,7 +117,25 @@ form {
         a{
             font-size: .8rem;
             text-decoration: none;
+            
         }
     }
 }
 
+
+.contenido-inferior{
+    a{
+        font-size: .8rem;
+    }  
+    .nuevo-usuario{
+        font-size: 1rem;
+        margin-top: 1rem;
+        display: flex;
+
+        a{
+            font-size: 1rem;
+            color: $blanco;
+            margin-left: .5rem;
+        }
+    }
+}

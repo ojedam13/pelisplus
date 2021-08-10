@@ -32,6 +32,18 @@ a{
     }
 }
 
+.alerta{
+    color: $secundario;
+    display: block;
+    margin-bottom: .5rem;
+    padding: .2rem;
+    font-size: .8rem;
+    text-align: center;
+}
+
+input.no-valido{
+    border-bottom: 2px solid $secundario!important;
+}
 .contenedor{
     width: 90%;
     margin: 0 auto;
@@ -75,6 +87,11 @@ form {
             left: 1rem;
             font-size: .9rem;
             transition: font-size .2s ease, top .2s ease;
+
+            &.valido{
+                font-size: .6rem;
+                top: .5rem;
+            }
         }
         input{
             flex: 1;
@@ -82,6 +99,7 @@ form {
             border: none;
             background-color: $gris;
             border-radius: $radius;
+            color: $blanco;
             &:focus{ 
                 background-color: $gris3; 
                 outline: none;

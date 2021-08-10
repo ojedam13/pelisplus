@@ -21,10 +21,24 @@ function validarInput(e) {
     } else {
         clase = estado[0];
     }
+    e.target.classList.remove(...estado);
+    e.target.nextElementSibling.classList.remove(...estado);
+    e.target.classList.add(clase);
+    e.target.nextElementSibling.classList.add(clase);
     // inyectar dinamicamente el div con el error
-    if (clase === 'no-validar') {
-        
+    if (clase === 'no-valido') {
+        if (e.target.parentElement.nextElementSibling.classList[0] !== 'alerta') {
+            // construir un msj de error
+            const errorDiv = document.createElement('div');
+            errorDiv.appendChild(document.createTextNode('Este campo es obligatorio'));
+            errorDiv.classList.add('alerta');
+            // insertar el error
+            e.target.parentElement.parentElement.insertBefore(errorDiv, e.target.parentElement.nextElementSibling);
+        }
     } else {
-        
+        // limpiar el msj de error si existe
+        if (e.target.parentElement.nextElementSibling.classList[0] === 'alerta') {
+            e.target.parentElement.nextElementSibling.remove();
+          }
     }
 }

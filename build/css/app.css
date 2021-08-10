@@ -29,6 +29,19 @@ a:hover {
   text-decoration: underline;
 }
 
+.alerta {
+  color: #e87c03;
+  display: block;
+  margin-bottom: 0.5rem;
+  padding: 0.2rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+input.no-valido {
+  border-bottom: 2px solid #e87c03 !important;
+}
+
 .contenedor {
   width: 90%;
   margin: 0 auto;
@@ -72,12 +85,17 @@ form .campo label {
   font-size: 0.9rem;
   transition: font-size 0.2s ease, top 0.2s ease;
 }
+form .campo label.valido {
+  font-size: 0.6rem;
+  top: 0.5rem;
+}
 form .campo input {
   flex: 1;
   padding: 1.3rem 1rem 0.7rem 1rem;
   border: none;
   background-color: #323232;
   border-radius: 5px;
+  color: #ffffffe0;
 }
 form .campo input:focus {
   background-color: #454545;
